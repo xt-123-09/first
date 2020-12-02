@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title>商城</title>
+		<link rel="stylesheet" href="./css/index.css"/>
+		<script src="./js/index.min.js"></script>
+	    <script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+	    <base target="_blank">
+	</head>
+	<body>
+
+		
+		<div class="header">
+			<div class="top">
+				<div class="t-l">
+					<img src="./img/return.png" style=" width: 0.7rem; height: 0.7rem;margin-top:0.225rem;">
+				</div>
+				<div class="t-m">店铺名称</div>
+				<div class="t-r">
+					<img src="./img/06.png" alt="pp" style="border-radius: 50%; width: 0.75rem; height:0.75rem;margin-top:0.225rem;">
+				</div>
+			</div>
+			
+			<div class="content">
+				<p class="jy">今日交易金额(元)</p>
+				<p class="jia">999.99</p>
+			</div>
+			
+			<div class="content1">
+				<p class="zong">今日交易共99笔</p>
+				<p class="kh">客户共99人</p>
+			</div>
+		</div>
+		
+		
+		<div class="zb">
+			<div class="tt">
+				实时账本 >
+			</div>
+			
+			<ul class="list">
+				<li>
+					<div class="left" style="text-align: left;">
+						<img src="img/06.png" alt="" style="border-radius: 50%; width: 1.0005rem; height: 1.0005rem;">
+					</div>
+					<div class="middle"style="text-align: ;">+99.99</div>
+					<div class="right"style="text-align: right;">23:59:59</div>
+				</li>
+				<li>
+					<div class="left" style="text-align: left;">
+						<img src="img/06.png" alt="" style="border-radius: 50%; width: 1.0005rem; height: 1.0005rem;">
+					</div>
+					<div class="middle"style="text-align: ;">+99.99</div>
+					<div class="right"style="text-align: right;">23:59:59</div>
+				</li>
+				<li>
+					<div class="left" style="text-align: left;">
+						<img src="img/06.png" alt="" style="border-radius: 50%; width: 1.0005rem; height: 1.0005rem;">
+					</div>
+					<div class="middle"style="text-align: ;">+99.99</div>
+					<div class="right"style="text-align: right;">23:59:59</div>
+				</li>
+				<li>
+					<div class="left" style="text-align: left;">
+						<img src="img/06.png" alt="" style="border-radius: 50%; width: 1.0005rem; height: 1.0005rem;">
+					</div>
+					<div class="middle"style="text-align: ;">+99.99</div>
+					<div class="right"style="text-align: right;">23:59:59</div>
+				</li>
+			</ul>
+		</div>
+		
+		
+		
+		<div class="biao">
+			<div class="tt">
+				生意报表 >
+			</div>
+			
+			<div id="main" style="width: 100%;height:300px; top: -0.8rem;"></div>
+		</div>
+		
+		
+		<div class="new">
+			
+			<div class="n-l">
+				<img src="img/06.png"  style="border-radius: 50%; width: 1.05rem; height: 1.05rem; line-height: 2.05rem;
+				margin-top: 20px;">
+			</div>
+			<div class="n-m">
+				<li>您的9月7号交易报已生成</li>
+				<li>您的9月7号交易报已生成</li>
+			</div>
+			<div class="n-r">
+				<p class="">23:59</p>
+				<p class="">09-01</p>
+			</div>
+		</div>
+		
+		
+		<div class="nav">
+			<li><a href="#">
+				<img src="./img/06.png" alt="" >
+				<p>收款码</p>
+			</a></li>
+			<li><a href="#">
+				<img src="./img/06.png" alt="" >
+				<p>线上订单</p>
+			</a></li>
+			<li><a href="#">
+				<img src="./img/06.png" alt="" >
+				<p>线下订单</p>
+			</a></li>
+			<li><a href="#">
+				<img src="./img/06.png" alt="" >
+				<p>收入明细</p>
+			</a></li>
+			
+			<li><a href="#">
+				<img src="./img/06.png" alt="" >
+				<p>个人资料</p>
+			</a></li>
+			<li><a href="#">
+				<img src="./img/06.png" alt="" >
+				<p>商品管理</p>
+			</a></li>
+			<li><a href="#">
+				<img src="./img/06.png" alt="" >
+				<p>商品类型</p>
+			</a></li>
+			<li><a href="#">
+				<img src="./img/06.png" alt="" >
+				<p>商品规格</p>
+			</a></li>
+			
+			<li><a href="#">
+				<img src="./img/06.png" alt="" >
+				<p>营销系统</p>
+			</a></li>
+			<li><a href="#">
+				<img src="./img/06.png" alt="" >
+				<p>用户评价</p>
+			</a></li>
+			<li><a href="#">
+				
+			</a></li>
+			<li><a href="#">
+				
+			</a></li>
+		</div>
+		
+		<script type="text/javascript">
+		        // 基于准备好的dom，初始化echarts实例
+		        var myChart = echarts.init(document.getElementById('main'));
+		 
+		        // 指定图表的配置项和数据
+		        var option = {
+   
+    tooltip: {
+        trigger: 'axis'
+    },
+    
+  
+    xAxis: {
+        type: 'category',
+        boundaryGap: false,
+        data: ['09-01', '09-02', '09-03', '09-04', '09-05', '09-06', '09-07'],
+		
+		color:'#ffe000',
+		"splitLine": {
+		          "show": false
+		        }
+				
+    },
+    yAxis: {
+		min:0, //y轴的最小值
+		max:500, //y轴最大值
+		interval:100, //值之间的间隔
+        type: '',
+		 "axisLine":{       //y轴
+		          "show":false
+		
+		        },
+    },
+    series: [
+       
+        {
+            name: '￥',
+            type: 'line',
+			itemStyle: {
+			        normal: {
+			            color: "#2ec7c9",
+			            lineStyle: {
+			                color: "#2ec7c9"
+			            }
+			        }
+			    },
+            data: [50, 420, 40, 150, 40, 80, 196],
+           
+            markLine: {
+                data: [
+                  
+                    [{
+                       
+                        yAxis: 'max'
+                    }, {
+                        symbol: 'circle'
+                       
+                       
+                    }]
+                ]
+            },
+			lineStyle: {
+					color: '#87ceeb',  //曲线的颜色
+											
+					}
+        }
+    ]
+};
+		 
+		        // 使用刚指定的配置项和数据显示图表。
+		        myChart.setOption(option);
+				// window.addEventListener("resize",function(){
+				// 	myChart.resize();
+				// });
+		    </script>
+	</body>
+	
+	
+</html>
